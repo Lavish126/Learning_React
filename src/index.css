@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 300px;
+  height: 310px;
+  background-color: #ffe4e8; /* Softer pastel pink */
+  color: #4a1525;            /* Deep burgundy for crisp text contrast */
+  
+  display: flex;
+  flex-direction: column;    /* Stacks multiple text elements neatly */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+  padding: 30px;
+  margin: 20px;
+  border-radius: 16px;       /* Smooth rounded corners */
+  box-shadow: 0 12px 30px rgba(255, 192, 203, 0.15); /* Soft pink glow on dark background */
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Interactive lift effect when hovering with the mouse */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 40px rgba(255, 192, 203, 0.28);
+}
+
+#button{
+    background-color: #e91e63;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+#button:hover {
+  background-color: #c2185b;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(233, 30, 99, 0.3);
+}
+
+.parent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
